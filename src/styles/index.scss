@@ -4,3 +4,27 @@ body {
   color: $body-color;
   font-family: sans-serif;
 }
+
+.cls-58 {
+  transition: fill .4s ease;
+}
+
+.cls-58.active {
+  fill: red;
+}
+
+#infowindow {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+  height: 70vh;
+  top: 15vh;
+  padding: 15px;
+  visibility: hidden;
+  transition: all .2s ease;
+  &.active {
+    visibility: visible;
+    border: 1px solid black;
+    background: white;
+  }
+}

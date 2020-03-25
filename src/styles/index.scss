@@ -1,16 +1,64 @@
+//@import "~circular-std/dist/index.css";
+
 $body-color: slateblue;
+
+#a991810c-e9b0-4157-a926-c1caed1c2f86 {
+  display: none;
+  position: absolute;
+  width: 60vw;
+  left: 20vw;
+  top: 25vh;
+  height: 50vh;
+  z-index: 101;
+  // transition: all .4s ease;
+}
+
+#a991810c-e9b0-4157-a926-c1caed1c2f86.active {
+  display:block;
+}
+
+#a88970c1-6b04-49ec-85a2-74579748921c {
+  width: 65vw;
+  left:17.5vw;
+  position: absolute;
+
+}
+
+#background-grey {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 40%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  // transition: all .4s ease;
+}
+
+#background-grey.active {
+  display:block;
+}
 
 body {
   color: $body-color;
   font-family: sans-serif;
 }
 
-.cls-58 {
+.step {
   transition: fill .4s ease;
 }
 
-.cls-58.active {
-  fill: red;
+.step.active {
+  fill: #d69e2d;
+}
+
+.step:hover {
+  // transform-origin: center;
+  // transform: scale(1.1) translate(2.5%, 2.5%);
+  stroke: #d69e2d;
+  stroke-width: 10px;
 }
 
 #infowindow {
@@ -22,7 +70,9 @@ body {
   padding: 15px;
   visibility: hidden;
   transition: all .2s ease;
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
   &.active {
+    z-index: 100;
     visibility: visible;
     border: 1px solid black;
     background: white;

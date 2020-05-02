@@ -1,3 +1,6 @@
+# Design Documentation:
+https://docs.google.com/document/d/1bzsgHgBL9sLj_zm-98NLf4mobH1Ch32A0uZjmuSP_1E/edit#
+
 # Webpack Frontend Starterkit
 
 [![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
